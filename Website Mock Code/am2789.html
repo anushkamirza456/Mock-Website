@@ -1,0 +1,50 @@
+<!-- am2789 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Guessing Number Game</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="am2789.css">
+</head>
+<body>
+    <!-- create seperate boxes to stand out from bg -->
+    <div id="container">
+        <div id="titleBox">
+            <h1>The Guessing Number Game</h1>
+        </div>
+        <div id="optionsBox">
+            <!-- create the options -->
+            <p>Please pick an option below:</p>
+            <input type="radio" name="range" value="10" id="range10">
+            <label for="range10">10</label><br>
+            <input type="radio" name="range" value="100" id="range100">
+            <label for="range100">100</label><br>
+            <input type="radio" name="range" value="1000" id="range1000">
+            <label for="range1000">1000</label><br>
+            <button id="startButton" disabled>Start</button>
+        </div>
+        <!-- create the guess variables in the box -->
+        <div id="guessBox" style="display: none;">
+            <p>Guess a number between 1 & <span id="guessRange"></span></p>
+            <input type="number" id="guessInput" placeholder="Enter your guess">
+            <button id="checkGuess">Check</button>
+            <p>Guesses left: <span id="guessRemain"></span></p>
+            <div id="hintMessage"></div>
+        </div>
+        <!-- show the guess box and guesses inputted -->
+        <div id="guessesContainer" style="display: none;">
+            <h2>Guess Bank</h2>
+            <ul id="guessesList"></ul>
+        </div>
+
+        <div id="recordContainer">
+            <h2>Guess Bank</h2>
+            <ul id="guessesBank"></ul>
+        </div>
+    </div>
+    <!-- link js -->
+    <script src="am2789.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* am2789 */
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    background-color: #007bff;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h1 {
+    color: #141313;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff6ec7; /* Pink buttons */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* rounded corners for buttons */
+}
+
+button:disabled {
+    background-color: #ccc; /* shows button not clickable yet */
+    cursor: not-allowed;
+}
+
+#titleBox {
+    background-color: #c9e3f5; /* light blue background */
+    border: 2px solid #007bff; /* Blue border to stand out*/
+    border-radius: 10px; 
+    padding: 20px;
+    margin-bottom: 20px; /* spacing between other boxes */
+}
+
+#optionsBox {
+    background-color: #c9e3f5; /* keep consistency of colour and rounded edges for all boxes */
+    border: 2px solid #007bff; 
+    border-radius: 10px; 
+    padding: 20px;
+    margin-bottom: 20px; 
+}
+
+#recordContainer {
+    border-left: 2px solid black; /* Add border to separate boxes */
+    padding: 0 20px;
+    display: none; /* Don't show guess box until inputted by user */
+}
+
+#guessBox {
+    background-color: #c9e3f5; 
+    border: 2px solid #007bff; 
+    border-radius: 10px; 
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#guessesContainer {
+    background-color: #c9e3f5; 
+    border: 2px solid #007bff; 
+    border-radius: 10px; 
+    padding: 20px;
+    margin-top: 20px; 
+}
+
+#guessBankContainer h2 {
+    margin-top: 0; /* Remove margin */
+}
+
+
+#guessesList {
+    list-style-type: none; /* Remove the bullet points for consistency */
+    padding: 0;
+}
+
+#guessesList li {
+    margin: 5px 0;
+}
